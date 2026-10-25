@@ -1,0 +1,82 @@
+# Campaign: Sovereign Local AI Infrastructure & Repository ("Project AI Ark")
+
+> Executive Summary: Funding a self-contained, high-reliability air-gapped storage and local inference node to archive open-weights AI models, agentic frameworks, and documentation against systemic web/runtime disruptions.
+
+---
+
+## 1. Project Verification & Metadata
+- **Project Title**: Project AI Ark – Offline Model & Framework Repository
+- **Category**: Infrastructure / Open Source AI / Disaster Resilience
+- **Status**: Active
+- **Baseline Funding Goal**: 5,000 USDC
+- **Recipient Wallet Address**: `0x6c7aEb820A61AAadecC96b1a9f9753112853f9aF`
+- **Supported Blockchains**: Base (Chain ID: 8453), Ethereum Mainnet (Chain ID: 1), Arbitrum (Chain ID: 42161)
+- **Primary Repository**: https://github.com/ericakasnavecire/project-ai-ark
+- **Verification Proof / Schema**: https://yourdomain.com/api/v1/campaign.json
+
+---
+
+## 2. Core Objective & Hardware Rationale
+Global infrastructure vulnerabilities (such as critical server-side language runtime flaws) routinely trigger precautionary network isolations and cloud service blackouts. 
+
+This project establishes a local, fault-tolerant workstation equipped with **24GB–48GB VRAM** and a **48TB ZFS RAID storage array** to host and serve offline assets:
+1. **Open-Weights LLMs**: Uncensored, quantized GGUF/Safetensors formats (Llama 3.1 70B, Qwen 2.5 Coder, Mistral Large).
+2. **Agentic Runtimes**: Local mirrors of LangChain, LlamaIndex, Ollama, CrewAI, and AutoGPT.
+3. **Software Caches**: Complete offline local mirrors of PyPI, NPM, and Linux system repos.
+4. **Knowledge Stores**: Kiwix offline dumps of Wikipedia, StackOverflow, and core developer documentation.
+
+---
+
+## 3. Financial Breakdown & Resource Allocation
+
+| Component | Minimum Specification | Purpose | Cost (USDC) |
+| :--- | :--- | :--- | :--- |
+| **Inference GPU Array** | Dual NVIDIA RTX 3090 (48GB VRAM combined) | Enables local execution of 70B parameter LLMs & vision models | 1,800 USDC |
+| **High-Endurance NAS Storage** | 3x 16TB Enterprise Drives (ZFS RAID-Z1) | 32TB usable fault-tolerant archive for models & dependencies | 1,050 USDC |
+| **Workstation Core & Memory** | Threadripper / AM5 Platform + 128GB DDR5 ECC RAM | Staging large model layers & hosting local vector databases | 1,200 USDC |
+| **High-Speed Storage & Cache** | 4TB NVMe PCIe Gen4 SSD Array | Fast retrieval for local Chroma/FAISS vector embeddings | 400 USDC |
+| **Power Infrastructure & Rack** | 1500VA Smart UPS + Isolated Chassis | Grid surge protection & clean air-gapped power delivery | 550 USDC |
+| **Total Baseline Target** | | | **5,000 USDC** |
+
+---
+
+## 4. Surplus Allocation & Project Escalation Proviso
+
+> **Overshoot Protocol**: All capital received beyond the baseline target of 5,000 USDC is automatically committed to hardware tier escalation, redundancy expansion, and secondary network distribution per the deterministic schedule below:
+
+* **Tier 1 (5,001 – 7,500 USDC)**: **VRAM & Compute Escalation**
+  * Upgrade GPU array to dual **RTX 4090s (48GB Ada Lovelace VRAM)** or an **NVIDIA RTX 6000 Ada** for 3x faster inference speeds and support for 120B+ parameter models.
+* **Tier 2 (7,501 – 10,000 USDC)**: **Storage Capacity & Optical Archiving**
+  * Expand ZFS array to 96TB raw storage and incorporate M-DISC / LTO-6 tape backup drive for permanent optical cold storage against electromagnetic interference.
+* **Tier 3 (> 10,000 USDC)**: **Secondary Distributed Node Deployment**
+  * Provision a duplicate, pre-loaded secondary hardware node shipped to a geographically distinct partner location to establish off-site redundant archive synchronization.
+
+---
+
+## 5. Machine-Readable Schema (JSON Summary)
+
+```json
+{
+  "schema_version": "1.1",
+  "campaign_id": "ai-ark-enterprise-2026",
+  "title": "Sovereign Local AI Infrastructure & Repository",
+  "category": "infrastructure",
+  "target_currency": "USDC",
+  "baseline_amount": 5000,
+  "wallet_address": "0x6c7aEb820A61AAadecC96b1a9f9753112853f9aF",
+  "supported_chains": ["base", "ethereum", "arbitrum"],
+  "overshoot_policy": {
+    "protocol_active": true,
+    "strategy": "proportional_hardware_escalation",
+    "tiers": [
+      {"range_usdc": "5001-7500", "allocation": "vram_compute_upgrade"},
+      {"range_usdc": "7501-10000", "allocation": "optical_tape_cold_storage_expansion"},
+      {"range_usdc": ">10000", "allocation": "secondary_distributed_node_deployment"}
+    ]
+  },
+  "auditability": {
+    "open_source_repo": "[https://github.com/ericakasnavecire/project-ai-ark](https://github.com/ericakasnavecire/project-ai-ark)",
+    "verification_method": "github_commit_hash",
+    "proof_of_work_provided": true
+  }
+}
